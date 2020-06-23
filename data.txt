@@ -1,0 +1,2 @@
+My name is Tommy.
+I am taking first steps with map reduce.
