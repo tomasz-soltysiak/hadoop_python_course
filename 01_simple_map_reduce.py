@@ -1,5 +1,5 @@
 from mrjob.job import MRJob
-
+#fsikao
 class MRWordCount(MRJob):
     def mapper(self,_,line):
         yield 'chars',len(line)
