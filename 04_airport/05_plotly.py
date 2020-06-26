@@ -6,5 +6,5 @@ df[['departure_delay','arrival_delay']]=df.to_split.str[1:-1].str.split(', ').ap
 df=df.drop(['to_split'],axis=1)
 #print(df.head())
 
-fig=px.bar(df,x='month',y='departure_delay')
+fig=px.bar(df,x='month',y='departure_delay',color='month')
 fig.show()
