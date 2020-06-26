@@ -14,7 +14,7 @@ class MRFligths(MRJob):
         items=items[1:-1]
         month,day,airline,distance=items.split(', ')
         distance=int(distance)
-        yield year,distance
+        yield None,distance
 
     def reducer(self, key, values):
         num=0
@@ -22,7 +22,7 @@ class MRFligths(MRJob):
         for value in values:
             num=num+1
             val=val+value
-        yield None,val/num
+        yield key,val/num
 
 
 
