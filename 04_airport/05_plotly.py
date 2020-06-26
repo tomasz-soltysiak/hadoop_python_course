@@ -8,4 +8,4 @@ df=df.drop(['to_split'],axis=1)
 #print(df.head())
 
 fig=px.bar(df,x='month',y='departure_delay',color='month')
-    fig=go.Figure(data=[go.Bar(x=df.month,y=df.departute_delay),go.Bar(x=df.month,y=df.arrival_delay)])
+fig=go.Figure(data=[go.Bar(x=df.month,y=df.departute_delay),go.Bar(x=df.month,y=df.arrival_delay)])
